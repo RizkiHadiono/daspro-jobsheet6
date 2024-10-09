@@ -16,19 +16,19 @@ public class Pemilihan2Percobaan2_11 {
         System.out.println("2. Ice Tea");
         System.out.println("3. Paket Bunding (Ricebowl + Ice Tea)");
         System.out.println("-------------------------------------");
-        System.out.println("masukkan angka dari menu yang dipilih = ");
+        System.out.print("Masukkan angka dari menu yang dipilih = ");
         pilihan_menu = input11.nextInt();
-        input11.nextLine();
-        System.out.println("Apakah punya member (y/n) ? = ");
+        input11.nextLine(); // Clear the newline character
+        System.out.print("Apakah punya member (y/n) ? = ");
         member = input11.nextLine();
-        System.out.println("Metode pembayaran (QRIS/nontunai/tunai) ? = ");
+        System.out.print("Metode pembayaran (QRIS/nontunai/tunai) ? = ");
         metodePembayaran = input11.nextLine();
         System.out.println("-------------------------------------");
 
-        if (member.equalsIgnoreCase("y")) {
+        if (member.equals("y")) {
             diskon = 0.10;
             System.out.println("Besar diskon = 10 %");
-        } else if (member.equalsIgnoreCase("n")) {
+        } else if (member.equals("n")) {
             diskon = 0.0;
         } else {
             System.out.println("Member tidak valid");
